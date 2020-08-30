@@ -1,0 +1,366 @@
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* General mobile query setup ----------- */
+@media only screen
+and (max-width : 1024px)
+and (orientation : portrait) {
+
+    /*********
+        HEADER
+    *********/
+
+    header .flex-container {
+        display: block;
+    }
+
+    .hero-mockup {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    /*********
+        about us
+    *********/
+
+    #about-us.flex-container h2{
+        flex-basis: 40%;
+    }
+
+    #about-us.flex-container p{
+        flex-basis: 50%;
+    }
+
+    /*********
+        our work
+    *********/
+
+    #our-work.flex-container {
+        display: block;
+    }
+
+    #our-work .tile {
+        height: 45vh;
+        margin: 0 auto 5vh !important;
+        grid-gap: 0;
+    }
+
+    #our-work .tile:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    #our-work .tile img{
+        width: 70%;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    /* Styles */
+    #wrapper {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    #hero-heading {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 44px;
+    }
+
+    #about-us {
+        max-width: 100%;
+    }
+
+    #about-us.flex-container {
+        display: block;
+    }
+
+    h2{
+        font-size: 40px !important;
+        text-align: left !important;
+    }
+
+    #about-us.flex-container p{
+        font-size: 16px;
+    }
+
+    #our-work .tile {
+        max-width: 100%;
+        grid-template-rows: 20vh 15vh 10vh;
+
+    }
+
+    #our-work .tile p {
+        font-size: 16px;
+    }
+
+    #action .buttons {
+        display: block;
+        overflow: visible;
+    }
+
+    #action .buttons a{
+        width: 100%;
+        margin: 0 auto 5vh !important;
+        font-size: 20px;
+
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px)
+and (max-width : 1224px)
+and (orientation : landscape) {
+    h2{
+        font-size: 40px !important;
+    }
+
+    /*********
+        HEADER
+    *********/
+    header .flex-container,
+    #about-us{
+        max-width: 80%;
+    }
+
+    #hero-heading {
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    /*********
+        about us
+    *********/
+    #about-us.flex-container p,
+    #our-work .tile p {
+        font-size: 14px;
+    }
+
+    /*********
+        our work
+    *********/
+    #our-work .tile {
+        height: auto;
+    }
+
+    #action a {
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 375px) {
+    #our-work .tile{
+        height: 50vh;
+        grid-template-rows: 22vh 18vh 10vh;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 824px)
+and (max-width : 1024px) {
+    /*********
+        GENERAL
+    *********/
+    body {
+        position: absolute;
+        width: 100vw;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .arrow {
+        height: 80px;
+    }
+
+    /*********
+        HEADER
+    *********/
+    header .centered {
+        max-width: 80%;
+    }
+
+    #hero-heading {
+        font-size: 64px;
+    }
+
+    #about-us.flex-container h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-mockup {
+        width: 40%;
+        height: 42%;
+    }
+
+    /*********
+        MAIN
+    *********/
+    #about-us {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /*********
+        our work
+    *********/
+
+    #our-work.flex-container {
+        justify-content: center;
+    }
+
+    #our-work .tile{
+        flex-basis: 42%;
+        height: 500px;
+        grid-gap: 0;
+    }
+
+    #our-work .tile:first-of-type {
+        margin-right: 2.5%;
+    }
+
+    #our-work .tile:last-of-type {
+        margin-left: 2.5%;
+    }
+
+    #our-work .tile img {
+        width: 100%;
+
+    }
+
+    #our-work .tile p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /*********
+        action
+    *********/
+    #action h2{
+       font-size: 48px;
+    }
+
+    #action a {
+        font-size: 20px;
+    }
+
+    #action .buttons a:first-of-type {
+        margin-right: 2.5%;
+    }
+
+    #action .buttons a:last-of-type {
+        margin-left: 2.5%;
+    }
+
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+    #our-work .tile {
+        max-width: 60%;
+    }
+}
+
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
+
+
+/* iPhone 5 ----------- */
+@media only screen
+and (max-width : 320px) {
+    .logo {
+        width: 20%;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    p, ul {
+        font-size: 14px !important;
+    }
+
+    #our-work .tile{
+        height: 55vh;
+        grid-template-rows: 22vh 22vh 11vh;
+    }
+
+    #our-work .tile ul{
+        margin-top: 10px;
+    }
+
+    #action .buttons a {
+        height: 60px;
+        font-size: 16px;
+    }
+
+
+}

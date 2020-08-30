@@ -1,0 +1,24 @@
+#about-us p,
+.logo,
+.hero-mockup,
+.arrow,
+.buttons .fill,
+.buttons .outline,
+#hero-heading,
+.tile,
+footer {
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+
+#about-us p.animated,
+.hero-mockup.animated,
+.logo.animated,
+.buttons .fill.animated,
+.buttons .outline.animated,
+.arrow.animated,
+.tile.animated,
+#hero-heading.animated,
+footer.animated{
+    opacity: 1;
+}
